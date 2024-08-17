@@ -51,7 +51,6 @@ def main(target, wordlist, threads, status_codes)
 
   workers.each(&:join)
 
-  print "\e[H\e[2J"  # Clear the terminal screen
   puts "====================================================="
   puts "#{Time.now.iso8601} Finished"
   puts "====================================================="
