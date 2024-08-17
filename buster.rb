@@ -17,7 +17,6 @@ rescue
   # Suppress error messages
 end
 
-# Main function
 def main(target, wordlist, threads, status_codes)
   wordlist_lines = File.readlines(wordlist).map(&:strip)
   queue = Queue.new
